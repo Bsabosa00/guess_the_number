@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(-45deg ,
+#667eea,#764ba2,#ff758c,#42e695 );
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+@keyframes gradientBG{
+    0% { background-position: 0% 50%;}
+    50% { background-position: 100% 50%;}
+    100% { background-position: 0% 50%;}
+}
+.game{
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(15px);
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+
+    box-shadow: 
+    0 8px 32px rgba(0,0,0,0.2),
+    inset 0 0 10px rgba(255,255,255,0.2);
+
+    animation: fadeIn 1s ease;
+    color: white ;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+h1{
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+input{
+    padding: 12px;
+    width: 100%;
+    margin: 12px 0;
+    border-radius:10px ;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    transition: 0.3s ;
+}
+input::placeholder{
+    color: #eee;
+}
+input:focus{
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.02);
+}
+button{
+    padding: 12px;
+    width: 100%;
+    margin: 6px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(135deg,
+#ff758c,#ff7eb3 );
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+button:hover{
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+button:active{
+    transform: scale(0.95);
+}
+#message{
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 20px;
+}
+#attempts{
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+@media(max-width :480px){
+    body{
+        padding: 15px;
+        align-items: flex-start;
+    }
+    .game{
+        margin-top: 40px;
+        padding: 25px;
+        border-radius: 15px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    #message{
+        font-size: 14px;
+    }
+    input{
+        font-size: 14px;
+        padding: 10px;
+    }
+    button{
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+@media (min-width:481px) and (max-width:768px){
+    .game{
+        max-width: 450px;
+    }
+}
+@media (min-width:700px) and (max-width:1200px){
+    .game{
+        max-width: 550px;
+    }
+    button{
+        width: 48%;
+        display: inline-block;
+    }
+    .game{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
